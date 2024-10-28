@@ -71,7 +71,7 @@ Then the sysroot library should appear in the result.
 
 *shell ./build*
 ```shell
-cmake -D CMAKE_BUILD_TYPE=Debug -D CMAKE_INSTALL_PREFIX=/opt/andes -D BUILD_SHARED_LIBS=OFF -D CMAKE_TOOLCHAIN_FILE=../platforms/linux/riscv64-andes-gcc.toolchain.cmake ..
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/opt/andes -D BUILD_SHARED_LIBS=OFF -D CMAKE_TOOLCHAIN_FILE=../platforms/linux/riscv64-andes-gcc.toolchain.cmake -D CMAKE_CROSSCOMPILING=../platforms/linux/riscv64-andes-gcc.toolchain.cmake ..
 ```
 
 #### Test Tips
